@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+
+spawn passwd ubuntu
+set password ubuntu
+expect "password:"
+send "$password\r"
+expect "password:"
+send "$password\r"
+expect eof
